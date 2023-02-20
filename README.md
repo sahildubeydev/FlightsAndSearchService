@@ -28,5 +28,4 @@ repository/ - tests/[later] - static/ - temp/
     "dialect": "mysql"
   }
 }
-
 ```

@@ -6,6 +6,8 @@ const setupAndStartServer = async () => {
   // create the express object
   const app = express();
 
+  // this is body parser
+  
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({ extended: true }));
 

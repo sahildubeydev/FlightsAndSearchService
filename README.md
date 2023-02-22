@@ -1,4 +1,4 @@
-/ Folder structure - src/
+<!-- / Folder structure - src/
 index.js // server
 models/
 controllers/
@@ -7,6 +7,7 @@ services/
 utils/
 config/
 repository/ - tests/[later] - static/ - temp/
+-->
 
 # Welcome to flights service
 

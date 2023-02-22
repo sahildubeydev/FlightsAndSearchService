@@ -27,7 +27,7 @@ const create = async (req, res) => {
   }
 };
 
-// Delete ->
+// DELETE -> /city/:id
 const destroy = async (req, res) => {
   try {
     const response = await cityService.deleteCity(req.params.id);

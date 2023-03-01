@@ -21,23 +21,6 @@ const setupAndStartServer = async () => {
     if (process.env.SYNC_DB) {
       db.sequelize.sync({ alter: true });
     }
-
-    // const city = await City.findOne({
-    //   where: {
-    //     id: 68,
-    //   },
-    // });
-    // const airports = await city.getAirports();
-    // const newAirport = await Airport.findOne({
-    //   where: {
-    //     id: 21,
-    //   },
-    // });
-    // await city.addAirport(newAirport);
-    // await city.addAirport({
-    //   name: "Jindal Vijaynagar Airport",
-    // });
-    // console.log(city, airports);
   });
 };
 

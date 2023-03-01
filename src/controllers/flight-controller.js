@@ -16,7 +16,30 @@ const create = async (req, res) => {
     return res.status(500).json({
       data: {},
       success: false,
-      message: "Not able to create the flight from flight-controller",
+      message:
+        "Not able to create the flight from flight-controller under create",
+      err: error,
+    });
+  }
+};
+
+const getAll = async (req, res) => {
+  try {
+    console.log(req.query);
+    const response = await flightService.getAllFlightData(req.query);
+    return res.status(200).json({
+      data: response,
+      success: true,
+      err: {},
+      message: "Successfully fetched the flights",
+    });
+  } catch (error) {
+    console.log(error);
+    return res.status(500).json({
+      data: {},
+      success: false,
+      message:
+        "Not able to fetch the flights from flight-controller under getAll",
       err: error,
     });
   }
@@ -24,4 +47,5 @@ const create = async (req, res) => {
 
 module.exports = {
   create,
+  getAll,
 };

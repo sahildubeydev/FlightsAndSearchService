@@ -7,6 +7,7 @@ services/
 utils/
 config/
 repository/ - tests/[later] - static/ - temp/
+readme updated
 -->
 
 # Welcome to flights service
